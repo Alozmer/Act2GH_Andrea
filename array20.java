@@ -2,7 +2,7 @@ import java.util.Random;
 
 public class array20 {
     public static void main(String[] args) {
-        int[] array = generateArray20(20, 1, 10);
+        int[] array = generateArray20(30, 1, 10);
 
         // Imprimir el array generado
         for (int i = 0; i < array.length; i++) {
