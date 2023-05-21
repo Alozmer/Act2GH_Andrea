@@ -20,4 +20,20 @@ public class array20 {
 
         return array;
     }
+
+    public static void printArray(int[] array) {
+    for (int i = 0; i < array.length; i++) {
+        System.out.print(array[i] + " ");
+    }
+    System.out.println();
+}
+
+public static Map<Integer, Integer> countOccurrences(int[] array) {
+    Map<Integer, Integer> occurrences = new HashMap<>();
+    for (int number : array) {
+        occurrences.put(number, occurrences.getOrDefault(number, 0) + 1);
+    }
+    return occurrences;
+}
+
 }
