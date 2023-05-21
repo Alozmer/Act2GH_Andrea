@@ -28,4 +28,12 @@ public class array20 {
     System.out.println();
 }
 
+public static Map<Integer, Integer> countOccurrences(int[] array) {
+    Map<Integer, Integer> occurrences = new HashMap<>();
+    for (int number : array) {
+        occurrences.put(number, occurrences.getOrDefault(number, 0) + 1);
+    }
+    return occurrences;
+}
+
 }
